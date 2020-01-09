@@ -40,13 +40,13 @@
     <nav>
       <div class="nav-wrapper white">
         <a href="#" class="brand-logo">DamisBnb</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#servizio">Servizio</a></li>
           <li><a href="#registrazione">Registrati</a></li>
           <li><a href="#ospita">Ospita</a></li>
         </ul>
-        <ul class="sidenav" id="mobile-demo">
+        <ul class="sidenav" id="mobile-links">
           <li><a href="#servizio">Servizio</a></li>
           <li><a href="#registrazione">Registrati</a></li>
           <li><a href="#ospita">Ospita</a></li>
@@ -226,7 +226,12 @@
     if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; 
     q.parentNode.insertBefore(js,q) } })()
   </script>
-
+  
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    })
+  </script>
 
   </body>
 </html>

@@ -50,9 +50,9 @@
     </nav>
   </div>
   <ul class="sidenav" id="mobile-links" data-toggle="collapse">
-    <li><a href="#servizio">Servizio</a></li>
-    <li><a href="#registrazione">Registrati</a></li>
-    <li><a href="#ospita">Ospita</a></li>
+    <li><a class="sidenav-close" href="#servizio">Servizio</a></li>
+    <li><a class="sidenav-close" href="#registrazione">Registrati</a></li>
+    <li><a class="sidenav-close" href="#ospita">Ospita</a></li>
   </ul>
 
 
@@ -235,6 +235,11 @@
     });
   </script>
 
+  <script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+    });
+</script>
 
   </body>
 </html>

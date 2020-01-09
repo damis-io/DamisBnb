@@ -40,7 +40,7 @@
     <nav>
       <div class="nav-wrapper white">
         <a href="#" class="brand-logo">DamisBnb</a>
-        <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="mobile-links" data-toggle="collapse" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#servizio">Servizio</a></li>
           <li><a href="#registrazione">Registrati</a></li>
@@ -235,12 +235,6 @@
     });
   </script>
 
-  <script>
-    function closeNav(event) {
-      event.stopPropagation();
-      document.getElementById('.sidenav').style.width = "0";
-    }
-  </script>
 
   </body>
 </html>

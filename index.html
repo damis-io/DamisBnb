@@ -49,11 +49,11 @@
       </div>
     </nav>
   </div>
-        <ul class="sidenav" id="mobile-links">
-          <li><a href="#servizio">Servizio</a></li>
-          <li><a href="#registrazione">Registrati</a></li>
-          <li><a href="#ospita">Ospita</a></li>
-        </ul>
+  <ul class="sidenav" id="mobile-links" onclick="closeNav()">
+    <li><a href="#servizio">Servizio</a></li>
+    <li><a href="#registrazione">Registrati</a></li>
+    <li><a href="#ospita">Ospita</a></li>
+  </ul>
 
 
   <!-- INTRO -->
@@ -228,13 +228,18 @@
     q.parentNode.insertBefore(js,q) } })()
   </script>
   
-
   <script>
       document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems, options);
     });
+  </script>
 
+  <script>
+    function closeNav(event) {
+      event.stopPropagation();
+      document.getElementById("mySidenav").style.width = "0";
+    }
   </script>
 
   </body>
